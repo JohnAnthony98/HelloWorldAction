@@ -1,0 +1,5 @@
+name: "Hello World Test"
+Description: "Trying out writing my own GitHub Action!"
+runs:
+  using: "docker"
+  image: "Dockerfile"
