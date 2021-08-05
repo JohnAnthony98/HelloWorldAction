@@ -1,9 +1,7 @@
 FROM alpine:latest
 
 RUN apk add --no-cache \
-        bash \
-        httpie \
-        jq
+        bash
 
 COPY start.sh /usr/local/bin/start.sh
 
