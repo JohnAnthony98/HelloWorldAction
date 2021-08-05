@@ -1,8 +1,8 @@
-FROM alpine:latest
+FROM alpine
 
 RUN apk add --no-cache \
         bash
 
-COPY start.sh /usr/local/bin/start.sh
+COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 
-ENTRYPOINT ["start.sh"]
+ENTRYPOINT ["entrypoint.sh"]
