@@ -1,5 +1,5 @@
 FROM python:3.9.1
 
-COPY hello.py /usr/local/bin/hello.py
+COPY start.sh /usr/local/bin/start.sh
 
-ENTRYPOINT hello.py
+ENTRYPOINT start.sh
