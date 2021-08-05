@@ -3,10 +3,7 @@ FROM alpine:latest
 RUN apk add --no-cache \
         bash \
         httpie \
-        jq \
-        which bash && \
-        which httpie && \
-        which jq
+        jq
 
 COPY start.sh /usr/local/bin/start.sh
 
