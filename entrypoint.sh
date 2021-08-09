@@ -1,5 +1,5 @@
 #!/bin/bash
 set -e
 
-echo "Running hello.py:\n"
-py hello.py
+echo "Running hello.py:"
+python3 hello.py
