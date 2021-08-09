@@ -3,6 +3,10 @@ FROM alpine
 RUN apk add --no-cache \
         bash
 
-COPY entrypoint.sh /usr/local/bin/bash/entrypoint.sh
+RUN mkdir /code
+WORKDIR /code
+ADD . /code/
 
-ENTRYPOINT ["entrypoint.sh"]
+RUN chmod +x /code/entrypoint.sh
+
+ENTRYPOINT ["/code/entrypoint.sh"]
