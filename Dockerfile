@@ -1,9 +1,8 @@
 FROM alpine
 
 RUN apk add --no-cache \
-        bash
-        
-RUN sudo apt-get install -y python
+        bash \
+        python3 py3-pip
 
 RUN mkdir /code
 WORKDIR /code
