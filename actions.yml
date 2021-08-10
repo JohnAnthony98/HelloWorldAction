@@ -3,3 +3,13 @@ Description: "Trying out writing my own GitHub Action!"
 runs:
   using: "docker"
   image: "Dockerfile"
+
+inputs:
+  Greeting:
+    description: 'What greeting should be used'
+    required: false
+    default: 'Hello'
+  AuthorName:
+    description: 'Name of Author'
+    required: true
+    default: 'World'
