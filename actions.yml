@@ -6,7 +6,7 @@ inputs:
     description: 'What greeting should be used'
     required: false
     default: 'Hello'
-  4ourName:
+  YourName:
     description: 'Name of Author'
     required: true
     default: 'World'
