@@ -1,0 +1,16 @@
+name: "Hello World Test"
+Description: "Trying out writing my own GitHub Action!"
+
+inputs:
+  Greeting:
+    description: "What greeting should be used"
+    required: false
+    default: "Hello"
+  YourName:
+    description: "Name of Author"
+    required: true
+    default: "World"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
