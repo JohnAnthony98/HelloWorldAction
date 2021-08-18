@@ -4,11 +4,11 @@ Description: "Trying out writing my own GitHub Action!"
 inputs:
   Greeting:
     description: "What greeting should be used"
-    required: false
+    required: no
     default: "Hello"
   YourName:
     description: "Name of Author"
-    required: true
+    required: yes
     default: "World"
 
 runs:
